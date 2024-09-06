@@ -16,7 +16,6 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 
-
 //  data
 const aboutData = [
   {
