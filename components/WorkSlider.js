@@ -4,39 +4,19 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title1',
+          title: 'Thesis',
           path: '/black.webp',
         },
         {
-          title: 'title2',
+          title: 'Bioinformatics',
           path: '/black.webp',
         },
         {
-          title: 'title3',
+          title: 'SloTex',
           path: '/black.webp',
         },
         {
-          title: 'title4',
-          path: '/black.webp',
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'title5',
-          path: '/black.webp',
-        },
-        {
-          title: 'title6',
-          path: '/black.webp',
-        },
-        {
-          title: 'title7',
-          path: '/black.webp',
-        },
-        {
-          title: 'title8',
+          title: 'Portfolio_k',
           path: '/black.webp',
         },
       ],

@@ -12,13 +12,11 @@ const vt323 = VT323({
 //components
 import Nav from '../components/Nav';
 import Header from '../components/Header';
-import TopLeftImg from '../components/TopLeftImg';
 import Footer from '../components/Footer';
 
 const Layout = ({children}) => {
   return (
   <div className= {`page bg-[url("../public/black.webp")] text-white  ${vt323.variable} font-vt323 relative overflow-y-scroll`}>
-    <TopLeftImg/>
     <Nav/>
     <Header/>
       {children}
