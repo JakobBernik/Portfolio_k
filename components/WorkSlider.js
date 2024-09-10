@@ -8,11 +8,11 @@ const workSlides = {
           path: '/black.webp',
         },
         {
-          title: 'Bioinformatics',
+          title: 'bioinformatics',
           path: '/black.webp',
         },
         {
-          title: 'SloTex',
+          title: 'Algorithms-and-data-structures-2',
           path: '/black.webp',
         },
         {
@@ -27,6 +27,7 @@ const workSlides = {
 //import swiper react components
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper';
+import Link from 'next/link';
 
 //import swiper styles
 import 'swiper/css';
@@ -58,17 +59,19 @@ const WorkSlider = () => {
               <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index}>
                 <div className='flex items-center justify-center relative overflow-hidden group'>
                   {/* image */}
-                  <Image src={image.path} width={500} height={300} alt='' className='opacity-30'/>
+                    <Image src={image.path} width={500} height={300} alt='' className='opacity-30'/>
                   {/* overlay gradient */}
                   <div className='absolute inset-0 bg-gradient-to-l from-transparent hover:bg-[rgba(255,255,255,0.5)] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                   {/* title */}
                   <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20'>
+                  <Link href={"https://github.com/JakobBernik/"+image.title} passHref={true} >
                     <div className='flex items-center gap-x-2 text-[20px] tracking-[0.2em]'>
                       {/* title part 2 */}
                       <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>{image.title}</div>
                       {/* icon */}
                       <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /></div>
                     </div>
+                    </Link>
                   </div>
                 </div>
               </div>
