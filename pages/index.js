@@ -12,6 +12,7 @@ import {easeInOut, motion} from 'framer-motion';
 //variants
 import {fadeIn} from '../variants';
 
+
 const Home = () => {
   return (
     <div className='bg-primary/60 h-full'>
@@ -31,8 +32,8 @@ const Home = () => {
       {/* image */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0 '>
         {/* bg image */}
-        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'>
-        </div>
+        <Image unoptimized className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'>
+        </Image>
         {/* particles */}
         <div>
          <ParticlesContainer />
