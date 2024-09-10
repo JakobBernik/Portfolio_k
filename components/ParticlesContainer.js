@@ -42,10 +42,10 @@ const ParticlesContainer = () => {
       },
       particles: {
         color: {
-          value: '#e68e2e',
+          value: '#ffffff',
         },
         links: {
-          color: '#f5d393',
+          color: '#ffffff',
           distance: 150,
           enable: true,
           opacity: 0.5,

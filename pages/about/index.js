@@ -46,7 +46,7 @@ const aboutData = [
         stage: '2019',
       },
       {
-        title: 'Intern - Cosylab',
+        title: 'Java Developer - Cosylab',
         stage: '2019 - 2023',
       },
     ],
@@ -78,15 +78,6 @@ const About = () => {
   return ( 
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
-      {/* avatar image */}
-      <motion.div 
-        variants={fadeIn('right',0.2)}
-        initial='hidden'
-        animate='show'
-        exit='hidden'
-        className="hidden xl:flex absolute bottom-0 -left-[550px]">
-        <Avatar2 />
-      </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
           {/* text */}
           <div className="flex-1 flex flex-col justify-center">
@@ -96,7 +87,7 @@ const About = () => {
               animate='show'
               exit='hidden'
               className="h2">
-                Captivating <span className="text-[#f53a52]">stories</span> birth magnificent designs.
+                From Concept to <span className="text-[#ff0000]">Code:</span> My Developer Journey
             </motion.h2>
             <motion.p 
               variants={fadeIn('right',0.4)}
@@ -104,7 +95,9 @@ const About = () => {
               animate='show'
               exit='hidden'
               className="max-w[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 years ago i began freelancing as a developer. Since then I've done remote work for agencies,consulted for startups and collaborated on digital products for business and consumer use.
+              Hello! I’m a passionate software developer from Slovenia with over 3 years of experience crafting efficient and scalable solutions. I specialize in a variety of technologies, including Java, Python, TypeScript, SQL, CSS, and HTML.
+Throughout my career, I've had the opportunity to work on a diverse range of projects, from smaller-scale applications to large, high-profile initiatives. Some of the most notable projects I’ve contributed to include the ESO-ELT (Extremely Large Telescope) and ITER (International Thermonuclear Experimental Reactor) – groundbreaking scientific endeavors where cutting-edge software plays a crucial role.
+I’m driven by a love for solving complex problems and continuously refining my skills to stay at the forefront of technology. Whether it's building responsive web applications or developing robust systems, I bring creativity, attention to detail, and a deep commitment to delivering high-quality code.
             </motion.p>
             {/* counters */}
             <motion.div 
@@ -116,7 +109,7 @@ const About = () => {
               <div className="flex flex-1 xl:gap-x-6">
                 {/* experience */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                  <div className="text-2xl xl:text-4xl font-extrabold text-[#e22a33]">
+                  <div className="text-2xl xl:text-4xl font-extrabold text-[#ff0000]">
                     <CountUp start={0} end={3} duration={5} /> +
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
@@ -125,7 +118,7 @@ const About = () => {
                 </div>
                 {/* projects */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                  <div className="text-2xl xl:text-4xl font-extrabold text-[#e22a33]">
+                  <div className="text-2xl xl:text-4xl font-extrabold text-[#ff0000]">
                     <CountUp start={0} end={12} duration={5} /> +
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
@@ -147,7 +140,7 @@ const About = () => {
                 return (
                   <div 
                     key={itemIndex}
-                    className={`${index === itemIndex && 'text-[#f53a52] after:w-[100%] after:bg-[#f53a52] after:transition-all after:duration-300'} cursor-pointer capitalize xl-text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                    className={`${index === itemIndex && 'text-[#ff0000] after:w-[100%] after:bg-[#ff0000] after:transition-all after:duration-300'} cursor-pointer capitalize xl-text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                     onClick={()=> setIndex(itemIndex)}
                     >
                     {item.title}

@@ -21,14 +21,14 @@ const Services = () => {
               animate='show'
               exit='hidden'
               className='h2 xl:mt-8'
-              >My services<span className='text-[#e22a33]'>.</span></motion.h2>
+              >My services<span className='text-[#ff0000]'>.</span></motion.h2>
             <motion.p 
               variants={fadeIn('up',0.4)}
               initial='hidden'
               animate='show'
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Lorem ipsum dolor mit amet
+              As a versatile developer with expertise in multiple programming languages and technologies, I offer a range of services to help bring your projects to life. Whether you're looking to build a dynamic web application, optimize an existing system, or implement complex backend solutions, I provide tailored, high-quality solutions designed to meet your specific needs. With a focus on clean code, scalability, and seamless user experience, I’m committed to delivering results that drive success.
             </motion.p>
           </div>
           <motion.div
