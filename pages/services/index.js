@@ -28,7 +28,7 @@ const Services = () => {
               animate='show'
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              As a versatile developer with expertise in multiple programming languages and technologies, I offer a range of services to help bring your projects to life. Whether you're looking to build a dynamic web application, optimize an existing system, or implement complex backend solutions, I provide tailored, high-quality solutions designed to meet your specific needs. With a focus on clean code, scalability, and seamless user experience, I’m committed to delivering results that drive success.
+              As a versatile developer with expertise in multiple programming languages and technologies, I offer a range of services to help bring your projects to life. Whether you are looking to build a dynamic web application, optimize an existing system, or implement complex backend solutions, I provide tailored, high-quality solutions designed to meet your specific needs. With a focus on clean code, scalability, and seamless user experience, I’m committed to delivering results that drive success.
             </motion.p>
           </div>
           <motion.div

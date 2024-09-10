@@ -24,7 +24,7 @@ const Home = () => {
           </motion.h1>
           {/* subtitle */}
           <motion.p variants={fadeIn('down',0.4)} initial='hidden' animate='show' exit='hidden' className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-            Hi, I'm Jakob, a Software Developer based in Slovenia.
+            Hi, I am Jakob, a Software Developer based in Slovenia.
           </motion.p>
         </div>
       </div>

@@ -28,7 +28,7 @@ const Work = () => {
               animate='show'
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Over the years, I've had the privilege of working on a variety of exciting projects that span different industries and challenges. From large-scale scientific endeavors like ESO-ELT and ITER to smaller, custom-built applications, each project has allowed me to refine my skills and push the boundaries of what’s possible with code. Below is a selection of my work, showcasing my commitment to quality, innovation, and solving complex problems through software development.
+              Over the years, I have had the privilege of working on a variety of exciting projects that span different industries and challenges. From large-scale scientific endeavors like ESO-ELT and ITER to smaller, custom-built applications, each project has allowed me to refine my skills and push the boundaries of what’s possible with code. Below is a selection of my work, showcasing my commitment to quality, innovation, and solving complex problems through software development.
             </motion.p>
           </div>
           <motion.div

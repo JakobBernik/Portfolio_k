@@ -63,7 +63,6 @@ const aboutData = [
 ];
 
 //components
-import Avatar2 from '../../components/Avatar2';
 import Circles from '../../components/Circles';
 
 // frame motion
@@ -95,9 +94,9 @@ const About = () => {
               animate='show'
               exit='hidden'
               className="max-w[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              Hello! I’m a passionate software developer from Slovenia with over 3 years of experience crafting efficient and scalable solutions. I specialize in a variety of technologies, including Java, Python, TypeScript, SQL, CSS, and HTML.
-Throughout my career, I've had the opportunity to work on a diverse range of projects, from smaller-scale applications to large, high-profile initiatives. Some of the most notable projects I’ve contributed to include the ESO-ELT (Extremely Large Telescope) and ITER (International Thermonuclear Experimental Reactor) – groundbreaking scientific endeavors where cutting-edge software plays a crucial role.
-I’m driven by a love for solving complex problems and continuously refining my skills to stay at the forefront of technology. Whether it's building responsive web applications or developing robust systems, I bring creativity, attention to detail, and a deep commitment to delivering high-quality code.
+              Hello! I am a passionate software developer from Slovenia with over 3 years of experience crafting efficient and scalable solutions. I specialize in a variety of technologies, including Java, Python, TypeScript, SQL, CSS, and HTML.
+Throughout my career, I have had the opportunity to work on a diverse range of projects, from smaller-scale applications to large, high-profile initiatives. Some of the most notable projects I’ve contributed to include the ESO-ELT (Extremely Large Telescope) and ITER (International Thermonuclear Experimental Reactor) – groundbreaking scientific endeavors where cutting-edge software plays a crucial role.
+I’m driven by a love for solving complex problems and continuously refining my skills to stay at the forefront of technology. Whether it is building responsive web applications or developing robust systems, I bring creativity, attention to detail, and a deep commitment to delivering high-quality code.
             </motion.p>
             {/* counters */}
             <motion.div 
@@ -149,16 +148,16 @@ I’m driven by a love for solving complex problems and continuously refining my
               })}
             </div>
             <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-              {aboutData[index].info.map((item,itemIndex)=>{
+              {aboutData[index].info.map((item,itemIndex1)=>{
                 return (
-                <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                <div key={itemIndex1} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   {/* icons */}
                   <div className="flex gap-x-4">
-                  {item.icons?.map((icon, itemIndex)=>{
-                    return <div className="text-2xl text-white">{icon}</div>
+                  {item.icons?.map((icon, itemIndex2)=>{
+                    return <div key={itemIndex2} className="text-2xl text-white">{icon}</div>
                   })}
                   </div>
                 </div>
