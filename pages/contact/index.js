@@ -1,3 +1,5 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 //icons
 import { BsArrowRight } from "react-icons/bs";
@@ -9,25 +11,28 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Script from "next/script";
 
-function sendEmail(e){
-  e.preventDefault();
-  var messageBody ="Name "+e.target.name.value+"<br/> Email "+e.target.email.value+"<br/> Message "+e.target.message.value
-  console.log(messageBody);
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "portfoliok.email@gmail.com",
-    Password : "0DA3FCB84FAA227054D42169DAA9AC441B31",
-    To : 'portfoliok.email@gmail.com',
-    From : "portfoliok.email@gmail.com",
-    Subject : e.target.subject.value,
-    Body : messageBody
-  }).then(
-    message => alert(message)
-  );
-  e.target.reset();
-}
-
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_2r0zxda', 'template_94op1bf', form.current, {
+        publicKey: 'uRHgRclKCKWREram7',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <div className="h-full bg-primary/30">
       <Script src="https://smtpjs.com/v3/smtp.js"/>
@@ -40,6 +45,7 @@ const Contact = () => {
             exit='hidden' 
             className="h2 text-center mb-12">Lets <span className="text-[#ff0000]">connect.</span></motion.h2>
           <motion.form
+            ref={form}
             onSubmit={sendEmail}
             variants={fadeIn('up',0.2)} 
             initial='hidden'
