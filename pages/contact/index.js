@@ -25,7 +25,7 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
-          e.target.reset();
+          e.target.reset(); 
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -35,7 +35,6 @@ const Contact = () => {
 
   return (
     <div className="h-full bg-primary/30">
-      <Script src="https://smtpjs.com/v3/smtp.js"/>
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2 
